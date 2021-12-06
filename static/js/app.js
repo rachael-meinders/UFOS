@@ -19,7 +19,7 @@ function buildTable(data) {
         // loop through each field in dataRow & add
         // each value as table cell (td)
         Object.values(dataRow).forEach((val) => {
-            let cell = row.apend("td");
+            let cell = row.append("td");
             cell.text(val);
             }
         );
@@ -44,6 +44,5 @@ function handleClick() {
 // 11.5.4 - attach event to listen for the form button
 d3.selectAll("#filter-btn").on("click", handleClick);
 
-
-// 11.5.4 - build table when the page loads
+// 11.5.4 - build table when the page loadss
 buildTable(tableData);
