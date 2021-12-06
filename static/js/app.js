@@ -8,11 +8,11 @@ var tbody = d3.select("tbody");
 // 11.5.1
 function buildTable(data) {
     // 11.5.1 - clear data
-    tbody.html(" ");
+    tbody.html("");
 
     // 11.5.2 - loop through each object in data
     // & append a row and cells for each value in the row
-    data.forEach((dataRow) >= {
+    data.forEach((dataRow) => {
         // append a row to the table body
         let row = tbody.append("tr");
 
@@ -25,7 +25,6 @@ function buildTable(data) {
         );
     });
 }
-
 // 11.5.3 -
 function handleClick() {
     // grab datetime value from filter
